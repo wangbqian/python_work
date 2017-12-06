@@ -1,0 +1,29 @@
+first_url = 'http://www.baidu.com'
+print("now access %s " %first_url)
+
+for i in []:
+    print(i)
+else:
+    print("end")
+
+
+for i in range(3):
+    print(i)
+    if i % 2 == 0:
+        break
+else:
+    print("end")
+
+abc = 'ABC'
+print(','.join(abc))
+
+names = ['raymond', 'rachel', 'matthew', 'roger',
+         'betty', 'melissa', 'judith', 'charlie']
+
+print ', '.join(names)
+
+print(len('banana')*7)
+
+
+greet = 'Hello Bob'
+print(greet.upper())
