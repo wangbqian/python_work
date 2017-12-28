@@ -81,13 +81,13 @@ def write_excel(excel_file):
 
 	#计算第二列和第三列的数据和
 	nc=sh1.ncols
-	for row in xrange(1,sh1.nrows):
+	for row in range(1,sh1.nrows):
 	    total=sum(sh1.row_values(row,1))
 	    sh1.put_cell(row,nc,xlrd.XL_CELL_NUMBER,total,None)
 
 	#把sheet1里面的第二列,第三列和总分列的数据写入
-	for row in xrange(1,sh1.nrows):
-	    for col in xrange(1,sh1.ncols):
+	for row in range(1,sh1.nrows):
+	    for col in range(1,sh1.ncols):
 	        wsheet.write(row,col,sh1.cell_value(row,col),style)
 
 	#写成文件new_data.xls
@@ -101,7 +101,7 @@ def write_excel(excel_file):
 
 if __name__ == '__main__':
 	file_name='input.xls'
-	excel_file=os.getcwd()+'\\'+file_name
+	excel_file=os.getcwd()+'/'+file_name
 	print('-'*10+'read excel'+'-'*10)
 	read_excel(excel_file)
 
