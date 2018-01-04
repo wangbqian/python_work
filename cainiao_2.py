@@ -4,23 +4,9 @@
 
 
 
-# def removeNum(numbers,number):
-#     lenNum = len(numbers)
-#     for i in range(lenNum):
-#         if numbers[i] == number:
-#             numbers.remove(number)
-#             newNums = numbers.remove(number)
-#             removeNum(newNums,number)
-    # return numbers
     
 
-def removeNum(numbers,number):
-    numCount = numbers.count(number)
-    for i in range(numCount):
-        numbers.remove(number)
-        # numbers.sort()
-    return sorted(numbers)
-nums=[1,6,6,3,6,2,10,2,100]
-remove_num = 6
-nums = removeNum(nums,remove_num)
-print(nums)
+
+
+list1 = list(filter(lambda n:n!= 6,[1,6,6,3,6,2,10,2,100]))
+print(sorted(list1))

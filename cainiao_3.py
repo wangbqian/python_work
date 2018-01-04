@@ -11,3 +11,7 @@ numsL = [1,3,3,5,5,8,10,10,100,100]
 # numsL  = list(numsS)
 
 print(noMult(numsL))
+
+
+
+print(sorted(set(numsL)))
