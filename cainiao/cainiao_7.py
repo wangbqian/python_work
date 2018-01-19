@@ -15,6 +15,11 @@ def problem7(names):
     
     names_dict = {name.title().strip(' >*'):len(name) for name in names.split(',')}
     print(sorted(names_dict.items(),key=lambda x:x[1],reverse=True))
+    print('** ** **' *3)
+    print(sorted(names_dict.items(),reverse=True))
+    print('** ** **' *3)
+    print(sorted(names_dict.items(),key=lambda x:x[0],reverse=True))
+
 
 problem7(names)
 
