@@ -4,9 +4,9 @@ def interest(cMoney,data):
 def defaulItnterest(cMoney,data):
     return cMoney*0.0005*data
 
-Money = 10000
+Money = 2000
 loan_data = 31 
-overdue_data = 1
+overdue_data = 53
 
 print(interest(Money,loan_data))
 
